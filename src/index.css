@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hidrix-blue: #003B5C;
+  --color-hidrix-green: #4CAF50;
+  --color-hidrix-deep: #00263E;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-hidrix-deep bg-white;
+  }
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-hidrix-blue), var(--color-hidrix-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
